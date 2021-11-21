@@ -1,0 +1,57 @@
+@import 'all';
+@import 'palette';
+
+
+$padding-container: 1rem;
+
+.wrapper__section-one {
+    width: 100%;
+    height: 100vh;
+    
+    background: red;
+    padding: $padding-container;
+}
+
+.container {
+    @include fullScreenPercentege();
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    background-color: green;
+}
+
+.desktop__nav-container {
+    background-color: yellow;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    position: absolute;
+    right: 0;
+
+    .list {
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+.content_container {
+    align-self: center;
+
+    div {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    div::after {
+        content: '';
+        background: red;
+        width: 1.8rem;
+        height: .3rem;
+        margin-top: 1.8rem;
+    }
+}
