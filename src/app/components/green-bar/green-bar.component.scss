@@ -1,6 +1,8 @@
+@import 'palette';
+
 .green-bar {
   display: inline-block;
-  background: red;
+  background-color: $primary-color;
   width: 1.5rem;
   height: .3rem;
 }

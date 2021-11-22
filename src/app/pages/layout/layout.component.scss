@@ -92,7 +92,7 @@ section {
 
 .wrapper__section-two {
   width: 100%;
-  background: green;
+  background: $primary-color-light;
   padding: $padding-container;
 
   .container {
@@ -105,6 +105,17 @@ section {
 
   .title-section {
     margin-bottom: 2rem;
+
+    p {
+      font-size: 1.8rem;
+      font-weight: 400;
+      color: $primary-color;
+    }
+
+    .green-bar {
+      background-color: $primary-color;
+      width: 3.5rem;
+    }
   }
 
   .title-section > div {
@@ -112,6 +123,8 @@ section {
     flex-direction: column;
     align-items: center;
   }
+
+
 
   .cards_container {
     display: flex;

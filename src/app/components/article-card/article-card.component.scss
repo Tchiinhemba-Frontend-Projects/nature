@@ -1,35 +1,43 @@
+@import "palette";
+
 .container_card {
 }
 
 .card-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .content {
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .green-bar {
+    width: 2.5rem;
+  }
 }
 
 .description__content-card {
-    display: inline-block;
-    margin-top: 1.5rem;
+  display: inline-block;
+  margin-top: 1.5rem;
+  text-align: center;
 }
 
 .card-size {
-        width: 18rem;
-        height: 14rem;
-        background-color: gray;
+  width: 18rem;
+  height: 14rem;
+  background: #fff;
 }
 
 .image-container {
-    background-image: url(/assets/images/banner.jpg);
-    background-position-x: right;
-    background-position-y: bottom;
-    background-size: cover;
+  background-image: url(/assets/images/card.jpg);
+  background-position-x: right;
+  background-position-y: center;
+  // filter: blur(.8px);
+  background-size: cover;
+  // background-attachment: fixed;
 }
-
