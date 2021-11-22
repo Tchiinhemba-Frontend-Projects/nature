@@ -1,7 +1,43 @@
+@import "palette";
+
 .container_card {
-    div {
-        width: 18rem;
-        height: 14rem;
-        background: red;
-    }
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .green-bar {
+    width: 2.5rem;
+  }
+}
+
+.description__content-card {
+  display: inline-block;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.card-size {
+  width: 18rem;
+  height: 14rem;
+  background: #fff;
+}
+
+.image-container {
+  background-image: url(/assets/images/card.jpg);
+  background-position-x: right;
+  background-position-y: center;
+  // filter: blur(.8px);
+  background-size: cover;
+  // background-attachment: fixed;
 }

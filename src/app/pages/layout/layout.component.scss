@@ -3,6 +3,14 @@
 
 $padding-container: 1rem;
 
+
+.global-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
 section {
   width: 100%;
   height: 100vh;
@@ -12,7 +20,6 @@ section {
   width: 100%;
   height: 100vh;
 
-  background: red;
   padding: $padding-container;
 
   .container {
@@ -21,22 +28,36 @@ section {
 
     display: flex;
     justify-content: center;
-    background-color: green;
+    background-image: url(/assets/images/banner.jpg);
+    background-size: cover;
   }
 
   .desktop__nav-container {
-    background-color: yellow;
     width: 100%;
+
+    padding: 1.5rem;
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     position: absolute;
     right: 0;
 
     .list {
       display: flex;
+      align-items: center;
       gap: 2rem;
+    }
+
+    .list li a {
+      color: black;
+      font-size: 1.1rem;
+    }
+
+    .logo a {
+      color: black;
+      font-size: 1.5rem;
     }
   }
 
@@ -49,14 +70,30 @@ section {
       align-items: center;
       flex-direction: column;
     }
+
+    span {
+      color: $primary-color;
+      font-size: 5rem;
+      font-weight: 600;
+      letter-spacing: .5rem;
+    }
+
+    p {
+      font-size: 1.8rem;
+      font-weight: 300;
+    }
+
+    .green-bar {
+      background-color: $primary-color;
+      width: 3rem;
+    }
   }
 }
 
 .wrapper__section-two {
   width: 100%;
-  background: green;
+  background: $primary-color-light;
   padding: $padding-container;
-
 
   .container {
     @include fullScreenPercentage();
@@ -67,61 +104,155 @@ section {
   }
 
   .title-section {
-      margin-bottom: 2rem;
+    margin-bottom: 2rem;
+
+    p {
+      font-size: 1.8rem;
+      font-weight: 400;
+      color: $primary-color;
+    }
+
+    .green-bar {
+      background-color: $primary-color;
+      width: 3.5rem;
+    }
   }
 
   .title-section > div {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+
+
 
   .cards_container {
+    display: flex;
+    gap: 3rem;
+  }
+}
+
+.wrapper__section-three {
+  width: 100%;
+  background: yellow;
+
+  .container {
+    @include fullScreenPercentage();
+    display: flex;
+  }
+
+  .image__about-container {
+    width: 50%;
+    background-image: url(/assets/images/banner.jpg);
+    background-size: cover;
+    background-position-x: right;
+    background-position-y: bottom;
+  }
+
+  .info_container {
+    width: 50%;
+    background: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-text {
+    margin-top: 2rem;
+  }
+  .about-text > p {
+    word-wrap: wrap;
+  }
+}
+
+.wrapper__section-four {
+  display: flex;
+  flex-direction: column;
+
+  .subscribe__container {
+    flex: 1;
+    background: green;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .subscribe-title {
+      text-align: center;
+  }
+
+  .form-container {
+      margin-top: 2rem;
+  }
+
+  .form-container form {
       display: flex;
-      gap: 3rem;
+      flex-direction: column;
+  }
+
+  .footer-wrapper {
+    width: 100%;
+    height: 30vh;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3.5rem;
+  }
+
+  .footer-container {
+    width: 100%;
+    background: green;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-container ul {
+    display: flex;
+  }
+
+  .social__network-list {
+    gap: 1rem;
+  }
+
+  .social__network-list li {
+    width: 2rem;
+    height: 2rem;
+    background: pink;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+  }
+
+  .nav-wrapper {
+  }
+
+  .footer__nav-list .list {
+    gap: 2rem;
   }
 }
 
 
-.wrapper__section-three {
-    width: 100%;
-    background: yellow;
-    padding: $padding-container;
-
-    .container {
-        @include fullScreenPercentage();
-        display: flex;
-    }
-
-    .image__about-container {
-        width: 50%;
-        background: red;
-    }
-
-    .info_container {
-        width: 50%;
-        background: green;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .about-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .about-header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .about-text {
-        margin-top: 2rem;
-    }
-    .about-text > p {
-        word-wrap: wrap;
-    }
+.btn-subscribe {
+  padding: .5rem 1.5rem;
+  border: .18rem solid black;
+  background-color: transparent;
 }
+

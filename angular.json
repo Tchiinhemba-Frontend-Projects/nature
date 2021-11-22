@@ -45,7 +45,7 @@
               ]
             },
             "scripts": [
-              "node_modules/@fortawesome/fontawesome-free/js/fontawesome.min.js"
+              "node_modules/@fortawesome/fontawesome-free/js/all.js"
             ]
           },
           "configurations": {
@@ -53,8 +53,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "5mb",
+                  "maximumError": "5mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -123,7 +123,7 @@
               ]
             },
             "scripts": [
-              "node_modules/@fortawesome/fontawesome-free/js/fontawesome.min.js"
+              "node_modules/@fortawesome/fontawesome-free/js/all.js"
             ]
           }
         }
