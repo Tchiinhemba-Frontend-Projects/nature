@@ -7,7 +7,6 @@ $padding-container: 1rem;
 .global-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
 }
 
 
@@ -142,10 +141,10 @@ section {
 
   .image__about-container {
     width: 50%;
-    background-image: url(/assets/images/banner.jpg);
+    background-image: url(/assets/images/about.jpg);
     background-size: cover;
-    background-position-x: right;
-    background-position-y: bottom;
+    background-position-x: center;
+    background-position-y: top;
   }
 
   .info_container {
