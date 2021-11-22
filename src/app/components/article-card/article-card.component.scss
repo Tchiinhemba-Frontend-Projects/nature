@@ -1,7 +1,35 @@
 .container_card {
-    div {
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.description__content-card {
+    display: inline-block;
+    margin-top: 1.5rem;
+}
+
+.card-size {
         width: 18rem;
         height: 14rem;
-        background: red;
-    }
+        background-color: gray;
 }
+
+.image-container {
+    background-image: url(/assets/images/banner.jpg);
+    background-position-x: right;
+    background-position-y: bottom;
+    background-size: cover;
+}
+
