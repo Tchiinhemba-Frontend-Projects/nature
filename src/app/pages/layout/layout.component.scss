@@ -306,19 +306,35 @@ section {
 @include responsive(phone) {
 
   .wrapper__section-one {
+    padding: .5rem;
     .desktop__nav-container {
       display: none;
     }
 
+    .container {
+      background-position-x: center;
+      background-position-y: center;
+    }
+
     .content_container {
       span {
-        font-size: 2rem;
+        font-size: 2.5rem;
+      }
+
+      p {
+        font-size: 1rem;
       }
     }
   }
   
   .wrapper__section-two {
     padding: 1rem 0;
+
+    .title-section {
+      p {
+        font-size: 1.2rem;
+      }
+    }
 
     .cards_container {
       display: flex;
@@ -336,6 +352,15 @@ section {
     main {
       display: flex;
       flex-direction: column;
+    }
+
+    .about-header p {
+      font-size: 2rem;
+    }
+
+    .about-text > p {
+      font-size: 1rem;
+      text-align: center;
     }
 
     main .image__about-container {
@@ -367,14 +392,12 @@ section {
       font-size: 1rem;
     }
 
-    // .subscribe-title {
-    //   & :nth-child(1){
-    //     font-size: 1.5rem;
-    //   }
+    .subscribe-title :nth-child(1) {
+      font-size: 1.5rem;
+    }
 
-    //   & :nth-child(2) {
-    //     font-size: .8rem;
-    //   }
-    // }
+    .subscribe-title :nth-child(2) {
+      font-size: 1rem;
+    }
   }
 }
