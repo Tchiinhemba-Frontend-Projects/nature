@@ -309,15 +309,26 @@ section {
     .desktop__nav-container {
       display: none;
     }
-  }
-  .cards_container {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
 
+    .content_container {
+      span {
+        font-size: 2rem;
+      }
+    }
+  }
+  
   .wrapper__section-two {
     padding: 1rem 0;
+
+    .cards_container {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .cards_container .container_card {
+      width: initial;
+    }
   }
 
   .wrapper__section-three {
@@ -349,6 +360,21 @@ section {
       display: flex;
       flex-direction: column;
       gap: 2rem;
+
     }
+
+    footer .footer__nav-list .list li {
+      font-size: 1rem;
+    }
+
+    // .subscribe-title {
+    //   & :nth-child(1){
+    //     font-size: 1.5rem;
+    //   }
+
+    //   & :nth-child(2) {
+    //     font-size: .8rem;
+    //   }
+    // }
   }
 }
